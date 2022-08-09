@@ -52,13 +52,23 @@
     </div>
   </main>
   <footer>
-    
+    <div class="content form-height">
+      <form>
+        <input
+          name="thought"
+          type="text"
+          class="form-input"
+          placeholder="Start typing"
+        />
+        <button type="submit" class="form-button">Send</button>
+      </form>
+    </div>
   </footer>
 </template>
 
 <style>
 .phone-body {
-  @apply w-[360px] h-screen border border-solid border-[#9f2ae8] border-t-4 p-2;
+  @apply w-[360px] h-auto border border-solid border-[#9f2ae8] border-t-4 p-2;
 }
 
 .img-icon {
@@ -91,5 +101,29 @@
 
 .chat-text p {
   @apply text-white text-xs;
+}
+
+footer {
+  @apply bg-[#9f2ae8] p-1;
+}
+
+form {
+  @apply flex;
+}
+.form-height {
+  @apply h-32;
+}
+
+.content {
+  @apply text-[#262626] py-2 w-full h-auto px-2 mb-1;
+}
+
+.form-input {
+  @apply rounded-xl w-full h-[2.5rem] px-6 focus:outline-none text-sm bg-gray-100 text-[#AAAAAA] appearance-none
+   py-2 focus:border placeholder-gray-500 focus:bg-[white] focus:ring-[#B8CADE] focus:border-[#B8CADE] focus:z-10;
+}
+
+.form-button {
+  @apply h-[2.5rem] w-4/12 ml-4 py-2 px-4 border border-transparent !bg-gray-100 text-sm font-medium rounded-xl text-black cursor-pointer;
 }
 </style>
