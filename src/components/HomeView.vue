@@ -3,7 +3,7 @@
     <div class="phone-body">
       <div class="chat-view">
         <img
-          class="left-icon"
+          class="img-icon"
           src="@/assets/user-profile-icon-left.svg"
           alt="profile icon"
         />
@@ -20,26 +20,26 @@
           </div>
         </div>
         <img
-          class="left-icon"
+          class="img-icon"
           src="@/assets/user-profile-icon-right.svg"
           alt="profile icon"
         />
       </div>
-       <div class="chat-view">
+      <div class="chat-view">
         <div class="chat-box bg-[#d3d3d3] triangle right-top">
           <div class="chat-text">
             <p>Lorem ipsum dolor</p>
           </div>
         </div>
         <img
-          class="left-icon"
+          class="img-icon"
           src="@/assets/user-profile-icon-right.svg"
           alt="profile icon"
         />
       </div>
       <div class="chat-view">
         <img
-          class="left-icon"
+          class="img-icon"
           src="@/assets/user-profile-icon-left.svg"
           alt="profile icon"
         />
@@ -51,6 +51,9 @@
       </div>
     </div>
   </main>
+  <footer>
+    
+  </footer>
 </template>
 
 <style>
@@ -58,8 +61,8 @@
   @apply w-[360px] h-screen border border-solid border-[#9f2ae8] border-t-4 p-2;
 }
 
-.left-icon {
-  @apply w-12;
+.img-icon {
+  @apply w-12 pb-10;
 }
 
 .chat-view {
@@ -71,14 +74,14 @@
 }
 
 .triangle.left-top:after {
-  @apply w-0 h-0 top-0 right-auto -left-5 bottom-auto absolute content-none;
+  @apply w-0 h-0 top-0 right-auto -left-5 bottom-auto absolute content-[""];
   border: 22px solid;
   border-color: #9f2ae8 transparent transparent transparent;
 }
 
 .triangle.right-top:before {
-  @apply w-0 h-0 top-0 -right-5 left-auto bottom-auto absolute content-none;
   border: 32px solid;
+  @apply w-0 h-0 top-0 -right-5 left-auto bottom-auto absolute content-[""];
   border-color: #d3d3d3 transparent transparent transparent;
 }
 
